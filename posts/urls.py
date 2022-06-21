@@ -3,8 +3,8 @@
 from django.contrib import admin
 from django.urls import path, include
 
-from posts.views import HomePageView
+from posts.views import *
 
 urlpatterns = [
-    path('', HomePageView.as_view(), name='home'),
+    path('', index, name='home'),
 ]
